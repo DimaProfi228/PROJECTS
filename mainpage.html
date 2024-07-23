@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ДОБРЫЙ КОЛА</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>ДОБРЫЙ КОЛА</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="uslugi.html">Услуги</a></li>
+                <li><a href="prices.html">Цены</a></li>
+                <li><a href="contacs.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Добро пожаловать на наш сайт!</h2>
+        <p>Мы предлагаем широкий спектр услуг по поставке Доброй Колы.</p>
+    </div>
+    <div class="foto">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.png" alt="Image 3">
+        <img src="image4.png" alt="Image 4">
+    </div>
+    <div class="feedback">
+        <h3>Обратная связь</h3>
+        <form action="1.php" method="POST">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit">Отправить</button><br>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 ДОБРЫЙ КОЛА. Все права защищены.</p>
+    </footer>
+	<DIV ID="toTop"> ^ Наверх </DIV>
+	<script>
+		if ('serviceWorker' in navigator){
+			navigator.serviceWorker.register('sw.js');
+		}
+	</script>
+</body>
+</html>
